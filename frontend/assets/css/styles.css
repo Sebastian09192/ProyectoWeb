@@ -1,0 +1,139 @@
+:root {
+  --primary-blue: #2c3e50; /* Azul oscuro para el logo y el footer */
+  --secondary-blue: #34495e; /* Un tono un poco más claro para la navbar */
+  --accent-blue: #3a7bd5; /* Un azul más vibrante para íconos y botones */
+  --light-blue: #ecf0f1; /* Un azul muy claro para los fondos */
+  --dark-text: #2c3e50;
+  --light-text: #f8f9fa;
+  --card-bg: #ffffff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--light-blue);
+}
+
+.navbar {
+  background-color: var(--secondary-blue) !important; /* Barra de navegación azul marino */
+  color: var(--light-text);
+}
+
+.navbar-brand {
+  color: var(--primary-blue) !important; /* Color del logo VSCR */
+  background-color: var(--card-bg); /* Fondo blanco para el logo */
+  padding: 0 10px;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.navbar .nav-link,
+.navbar .btn-outline-light,
+.navbar .dropdown-toggle {
+  color: var(--light-text) !important;
+  border-color: var(--light-text) !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .btn-outline-light:hover,
+.navbar .dropdown-toggle:hover {
+  background-color: var(--light-text) !important;
+  color: var(--secondary-blue) !important;
+}
+
+.hero-section {
+  background-color: var(--secondary-blue);
+  background-image: url('../img/inde.jpg'); 
+  background-size: cover;
+  background-position: center;
+  color: var(--light-text);
+  padding: 5rem 0; /* Menos padding vertical */
+  display: flex;
+  align-items: center;
+  min-height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  position: absolute; /* Posiciona el contenido del hero */
+  top: 50%; /* Centrado verticalmente */
+  left: 10%; /* Posicionado a la izquierda */
+  transform: translateY(-50%); /* Ajuste fino del centrado */
+  text-align: left;
+  z-index: 10;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+}
+
+.hero-section .lead {
+  font-size: 1.25rem;
+}
+
+.btn-light {
+  background-color: var(--light-text);
+  color: var(--primary-blue);
+  border-color: var(--light-text);
+}
+
+.btn-light:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: var(--primary-blue);
+}
+
+.container h2 {
+  color: var(--dark-text);
+}
+
+.cat-card {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--dark-text);
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.cat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.cat-card .card-body {
+  padding: 1.5rem;
+}
+
+.cat-card .card-body i {
+  color: var(--accent-blue); /* Los iconos ahora son azul vibrante */
+  font-size: 3rem;
+  margin-bottom: 0.75rem;
+}
+
+.bg-light {
+  background-color: var(--light-blue) !important;
+}
+
+footer {
+  background-color: var(--primary-blue) !important;
+  color: var(--light-text) !important;
+}
+
+footer a {
+  color: var(--light-text) !important;
+}
+
+#cart-count { 
+  font-size: .75rem; 
+}
+
+small.muted { 
+  color: var(--dark-text); 
+}
+
+
+
+
+
+
